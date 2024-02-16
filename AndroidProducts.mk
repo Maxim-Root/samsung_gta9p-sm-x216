@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_gta9p.mk
+    $(LOCAL_DIR)/twrp_gta9p.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_gta9p-user \
-    omni_gta9p-userdebug \
-    omni_gta9p-eng
+    twrp_gta9p-user \
+    twrp_gta9p-userdebug \
+    twrp_gta9p-eng
