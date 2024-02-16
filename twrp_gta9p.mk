@@ -16,7 +16,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, device/samsung/gta9p/device.mk)
 
 PRODUCT_DEVICE := gta9p
-PRODUCT_NAME := omni_gta9p
+PRODUCT_NAME := twrp_gta9p
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-X216B
 PRODUCT_MANUFACTURER := samsung
