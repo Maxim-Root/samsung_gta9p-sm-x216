@@ -1,10 +1,14 @@
 # Android device tree for samsung SM-X216B (gta9p)
 
-```
-#
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-```
+# How-to compile it:
+
+## twrp 12.1 Manifest
+    repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+## Sync
+    repo sync
+## Clone MrFluffyOven twrp tree
+    git clone https://github.com/MrFluffyOven/android_device_samsung_gta8wifi.git -b twrp-12.1 device/samsung/gta9p
+## build:
+    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_gta9p-eng; mka recoveryimage
+## Multidisabler
+    Boot twrp, Wipe data, Reboot Recovery, go to twrp terminal, type "multidisabler" hit enter/return , Wipe data again, Encryption should be Disabled
