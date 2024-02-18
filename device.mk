@@ -19,11 +19,3 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
-
-# Shipping level
-PRODUCT_SHIPPING_API_LEVEL := 33
-PRODUCT_TARGET_VNDK_VERSION := 33
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
